@@ -1,3 +1,5 @@
+/* GENERAL */
+
 * {
     margin: 0;
     padding: 0;
@@ -8,9 +10,57 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
+h2 {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 50px;
+}
+
+h3 {
+    color: green;
+    font-size: 20px;
+}
+
+h5 {
+    font-weight: 300;
+    font-size: 24px;
+}
+
+h6 {
+    font-size: 18px;
+    font-weight: 300;
+    color: #999;
+}
+
+p {
+    font-weight: 300;
+    color: #999;
+}
+
 .container {
     width: 85%;
     margin: auto;
+}
+
+.btn {
+    padding: 6px;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid #4e8cb6;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.btn-primary {
+    background-color: #7fb802;
+    border-color: #7fb802;
+}
+
+.clearfix {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 /* HEADER */
@@ -76,21 +126,6 @@ header {
     line-height: 100px;
 }
 
-.btn {
-    padding: 6px;
-    color: white;
-    border-radius: 5px;
-    border: 1px solid #4e8cb6;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-size: 12px;
-}
-
-.btn-primary {
-    background-color: #7fb802;
-    border-color: #7fb802;
-}
-
 .header-bottom {
     background-image:
     url("https://cdn.fluentify.com/bundles/fluentifypublic/images/r4b/01/xoldman.png.pagespeed.ic.dfg9F8pm_f.png");
@@ -121,32 +156,55 @@ header {
 
 section {
     width: 100%;
-    height: 200px;
-    border: 2px solid white;
-    background-color: purple;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    padding-top: 20px;
+    padding-bottom: 50px;
 }
 
 .accent {
     width: 100%;
-    height: 100px;
+    height: 150px;
     background-color: #f9f9f9;
 }
 
-header + .accent {
+main .accent:first-child .container{
     text-align: center;
+    line-height: 40px;
+    padding-top: 35px;
+}
+
+main .accent:first-child .container p{
+    font-size: 18px;
 }
 
 .box {
-    width: 100px;
-    height: 100px;
-    background-color: lightcoral;
-    border: 2px solid black;
-    display: inline-block;
+    padding: 0 10px;
 }
 
 .col33 {
-    width: 33%;
+    width: 32%;
     float: left;
+}
+
+#offer {
+    text-align: center;
+}
+
+#offer img {
+    height: 160px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+#offer .short {
+    width: 32px;
+    color: #999;
+    display: inline-block;
+    margin: 20px 0;
+}
+
+#offer p {
+    line-height: 30px;
 }
 
 .col50 {
@@ -154,12 +212,69 @@ header + .accent {
     float: left;
 }
 
-#makeaplan-1 + .accent *{
+#makeaplan-1 .box:first-child {
+    margin-top: 40px;
+}
+
+#makeaplan-1 .imgbox {
+    width: 400px;
+    height: 400px;
+    background-image:
+    url("https://cdn.fluentify.com/bundles/fluentifypublic/images/r4b/01/mountain.svg?v17");
+    background-repeat: no-repeat;
+}
+
+.a-lightblue {
+    color: #98c8f8;
+}
+
+#makeaplan-1 .box:last-child {
+    margin-top: 80px;
+}
+
+#makeaplan-1 h6 {
+    margin: 30px 0;
+}
+
+/* ??????????????????????????????????
+
+ #offer .imgbox:first-child {
+    background-image:
+    url("https://cdn.fluentify.com/bundles/fluentifypublic/images/r4b/01/profile.svg?v17")
+    background-color: blue;
+} */
+
+ #makeaplan-1 + .accent .box:first-child{
+    float: left;
+}
+
+#makeaplan-1 + .accent h2{
+    line-height: 150px;
+}
+
+#makeaplan-1 + .accent p {
+    line-height: 150px;
+}
+
+#makeaplan-1 + .accent .box:last-child {
+    float: right;
+    width: 29%;
+}
+
+#makeaplan-1 + .accent .box:last-child * {
     display: inline-block;
 }
 
-footer {
-    background-color: #17406B;
+.bluebg {
+    background-color: #0D325A;
+}
+
+.bluebg h2 {
+    color: #fff;
+}
+
+.bluebg h6 {
+    line-height: 28px;
 }
 
 #onetoone div:last-child {
@@ -168,3 +283,8 @@ footer {
     background-size: contain;
     background-repeat: no-repeat;
 }
+
+/* footer {
+    background-color: #17406B;
+}
+*/
